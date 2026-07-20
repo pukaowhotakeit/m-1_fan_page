@@ -1,0 +1,54 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M-1 人名検索</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>M-1 人名検索</h1>
+            <p>検索するメンバーを入力してください。</p>
+            <p>正式表記がわからない場合は、カタカナで入力してください。</p>
+        </header>
+
+        <section class="search-area">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="メンバー名を入力"
+                autocomplete="off">
+
+            <button id="searchButton">
+                検索
+            </button>
+
+        </section>
+
+        <section id="messageArea">
+        </section>
+
+        <section id="resultArea">
+        </section>
+
+        <nav id="paginationArea">
+        </nav>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
