@@ -72,6 +72,11 @@ async function loadData() {
 
 function startSearch() {
 
+    const searchMode =
+        document.querySelector(
+            'input[name="searchMode"]:checked'
+        ).value;
+
     const keyword = normalize(
         document.getElementById("searchInput").value
     );
@@ -100,10 +105,24 @@ function startSearch() {
             const name = normalize(member.name);
             const kana = normalize(member.kana);
 
-            if (
-                name.includes(keyword) ||
-                kana.includes(keyword)
-            ) {
+            let matched = false;
+
+            if (searchMode === "partial") {
+
+                matched =
+                    name.includes(keyword) ||
+                    kana.includes(keyword);
+
+            }
+            else {
+
+                matched =
+                    name === keyword ||
+                    kana === keyword;
+
+            }
+
+            if (matched) {
 
                 matchedMember = member;
                 break;
