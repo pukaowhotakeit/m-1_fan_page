@@ -1,3 +1,10 @@
+# Node.js
+node_modules/
+web/node_modules/
+
+# Local data
+data/images/
+
 # Python
 __pycache__/
 *.py[cod]
