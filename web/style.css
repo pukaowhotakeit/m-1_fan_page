@@ -117,4 +117,13 @@ header p {
         padding: 15px;
     }
 
+    .search-option {
+        margin-bottom: 20px;
+    }
+
+    .search-option label {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
 }
