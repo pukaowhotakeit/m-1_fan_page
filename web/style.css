@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #332525;
+    background-color: #1b1414;
     color: #ffffff;
     font-family: sans-serif;
     line-height: 1.6;
@@ -13,17 +13,22 @@ body {
 
 .container {
     width: 90%;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 40px auto;
 }
 
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    padding-bottom:24px;
+    border-bottom:1px solid #453030;    
 }
 
 header h1 {
     color: #e2ad39;
+    text-shadow:
+        0 2px 0 #7b5a12,
+        0 5px 12px rgba(0,0,0,.45);    
     font-size: 2.4rem;
     margin-bottom: 10px;
 }
@@ -33,24 +38,54 @@ header p {
 }
 
 section {
-    background-color: #8b1f25;
-    border: 1px solid #d04e55;
-    border-radius: 10px;
+    background: linear-gradient(
+        to bottom,
+        #a72b31 0%,
+        #8b1f25 35%,
+        #73181d 100%
+    );
+    border: 1px solid #d36a70;
+    border-radius: 12px;
     padding: 24px;
-    margin-bottom: 30px;
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.18),
+        inset 0 -2px 4px rgba(0,0,0,.25);
+    margin-bottom: 24px;
+    transition:
+        transform .15s,
+        box-shadow .15s,
+        background .15s;
+}
+
+section:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 12px 24px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.2),
+        inset 0 -2px 4px rgba(0,0,0,.25);
 }
 
 section h2 {
-    color: #e2ad39;
+    color: rgb(216, 216, 216);
     margin-bottom: 18px;
-    border-left: 5px solid #e2ad39;
+    border-left: 5px solid rgb(216, 216, 216);
     padding-left: 10px;
 }
 
 .tool-button {
     display: inline-block;
-    background-color: #ffd700;
-    color: #111111;
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff,
+            #e7e7e7
+        );
+    border:1px solid #c7c7c7;
+    box-shadow:
+        0 3px 8px rgba(0,0,0,.3),
+        inset 0 1px 0 rgba(255,255,255,.8);
+    color: #8b1f25;
     text-decoration: none;
     font-weight: bold;
     padding: 12px 24px;
@@ -59,7 +94,16 @@ section h2 {
 }
 
 .tool-button:hover {
-    background-color: #ffe55c;
+    background:
+        linear-gradient(
+            to bottom,
+            #fff9df,
+            #ecd58c
+        );
+    transform:translateY(-2px);
+    box-shadow:
+        0 6px 12px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.8);
 }
 
 #newsArea {
@@ -74,6 +118,19 @@ section h2 {
 
 .contact a:hover {
     text-decoration: underline;
+}
+
+.main-layout{
+    display:flex;
+    gap:24px;
+}
+
+.left-column{
+    flex:7;
+}
+
+.right-column{
+    flex:3;
 }
 
 footer {
