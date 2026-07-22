@@ -25,10 +25,7 @@ header {
 }
 
 header h1 {
-    color: #e2ad39;
-    text-shadow:
-        0 2px 0 #7b5a12,
-        0 5px 12px rgba(0,0,0,.45);    
+    color: #e2ad39;   
     font-size: 2.4rem;
     margin-bottom: 10px;
 }
