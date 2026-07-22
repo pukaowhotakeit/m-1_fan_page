@@ -1,4 +1,5 @@
-const DATA_FILE = "data/combiList.json";
+const BASE_PATH = "..";
+const DATA_FILE = `${BASE_PATH}/data/combiList.json`;
 const RESULTS_PER_PAGE = 20;
 const MAX_RESULTS = 70;
 
