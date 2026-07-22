@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>M-1 人名検索</title>
+    <title>fantools-m1gp</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,58 +15,66 @@
     <main class="container">
 
         <header>
-            <h1>M-1 人名検索</h1>
-            <p>検索するメンバーを入力してください。</p>
-            <p>正式表記がわからない場合は、カタカナで入力してください。</p>
+
+            <h1>非公式ファンサイト「fantools-m1gp」</h1>
+
+            <p>
+                M-1グランプリをもっと楽しむための便利ツール集です。
+            </p>
+
         </header>
 
-        <section class="search-area">
+        <section>
 
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="メンバー名を入力"
-                autocomplete="off">
+            <h2>ツール</h2>
 
-            <button id="searchButton">
-                検索
-            </button>
+            <p>
 
-            <div class="search-option">
+                <a href="member-search/">
+                    人名でコンビ検索
+                </a>
 
-                <label>
-                    <input
-                        type="radio"
-                        name="searchMode"
-                        value="partial"
-                        checked>
-                    部分一致を含める
-                </label>
+            </p>
 
-                <label>
-                    <input
-                        type="radio"
-                        name="searchMode"
-                        value="exact">
-                    完全一致のみ
-                </label>
+        </section>
+
+        <section>
+
+            <h2>お知らせ</h2>
+
+            <div id="newsArea">
+
+                <!--
+                    今後ここにニュースタグを表示する。
+                    タグをクリックするとポップアップ表示予定。
+                -->
+
+                <p>現在、お知らせはありません。</p>
 
             </div>
 
         </section>
 
-        <section id="messageArea">
-        </section>
+        <section>
 
-        <section id="resultArea">
-        </section>
+            <h2>ご連絡はこちら</h2>
 
-        <nav id="paginationArea">
-        </nav>
+            <p>
+
+                <a
+                    href="https://twitter.com/あなたのID"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    X（Twitter）
+
+                </a>
+
+            </p>
+
+        </section>
 
     </main>
-
-    <script src="script.js"></script>
 
 </body>
 
