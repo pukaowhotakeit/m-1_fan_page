@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #111111;
+    background-color: #332525;
     color: #ffffff;
     font-family: sans-serif;
     line-height: 1.6;
@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    color: #ffd700;
+    color: #e2ad39;
     font-size: 2.4rem;
     margin-bottom: 10px;
 }
@@ -33,17 +33,17 @@ header p {
 }
 
 section {
-    background-color: #1d1d1d;
-    border: 1px solid #333333;
+    background-color: #8b1f25;
+    border: 1px solid #d04e55;
     border-radius: 10px;
     padding: 24px;
     margin-bottom: 30px;
 }
 
 section h2 {
-    color: #ffd700;
+    color: #e2ad39;
     margin-bottom: 18px;
-    border-left: 5px solid #ffd700;
+    border-left: 5px solid #e2ad39;
     padding-left: 10px;
 }
 
