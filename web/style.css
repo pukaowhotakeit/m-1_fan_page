@@ -136,3 +136,46 @@ footer {
     color: #888888;
     font-size: 0.9rem;
 }
+
+/* タブレット向け */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+}
+
+/* スマホ向け */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .tool-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
