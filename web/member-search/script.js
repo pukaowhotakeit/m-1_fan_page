@@ -37,31 +37,24 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function loadData() {
 
-    const messageArea = document.getElementById("messageArea");
-
-    messageArea.textContent = "データを読み込んでいます...";
-
     try {
+
+        console.log("Loading combiList.json...");
 
         const response = await fetch(DATA_FILE);
 
         if (!response.ok) {
-            throw new Error("Failed to load JSON.");
+            throw new Error(`HTTP ${response.status}`);
         }
 
         combiList = await response.json();
 
-        messageArea.textContent =
-            `${combiList.length}件のコンビ情報を読み込みました。`;
+        console.log(`Loaded ${combiList.length} combi records.`);
 
     }
-
     catch (error) {
 
-        console.error(error);
-
-        messageArea.textContent =
-            "データの読み込みに失敗しました。";
+        console.error("Failed to load combiList.json.", error);
 
     }
 
